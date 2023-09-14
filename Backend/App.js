@@ -2,18 +2,20 @@ const express=require("express")
 const app=express()
 var cors = require('cors')
 const path=require('path')
-const stripe=require('stripe')
-("rk_test_51NmLV0SAPwCq4NmNxLO1w1DqK5xEREBZqFCeqQLxkysSm9TH9QOv79cQswoGEDMhMXQungjrwQ19YrZw85RqFfAk00Tck1oT2q")
 const port=8000
 app.use(express.json())
 app.use(cors())
+const dotenv = require("dotenv");
 // static files////////////////////
 // app.use(express.static(path.join(__dirname,'./amazon-clone/build')))
 
 // app.get("*", (req,res)=>{
-//     res.sendFile(path.join(__dirname,'./amazon-clone/build/index.html'))
-// })
-
+    //     res.sendFile(path.join(__dirname,'./amazon-clone/build/index.html'))
+    // })
+    dotenv.config();
+    const stripe=require('stripe')
+    (process.env.STRIPE_SECRET_KEY)
+    
 app.get('/',(req,res)=>{
     res.send("App is live")
 })
