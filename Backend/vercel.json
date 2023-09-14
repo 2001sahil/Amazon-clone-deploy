@@ -1,8 +1,8 @@
 {
-    "version": 1,
+    "version": 2,
     "name": "amazon-backend",
     "builds": [
-      { "src": "App.js", "use": "@vercel/node" }
+      { "src": "./App.js", "use": "@vercel/node" }
     ],
     "routes": [
       { "src": "/(.*)", "dest": "/index.js" }
