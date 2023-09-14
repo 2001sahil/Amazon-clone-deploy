@@ -26,7 +26,7 @@ app.post("/payments/create",async (req,res)=>{
     // console.log("payment recieved",total)
     try{
         const paymentIntent=await stripe.paymentIntents.create({
-            amount:total.toFixed(2),
+            amount:total,
             currency:"usd",
             description: 'Description of the transaction', 
             receipt_email: 'customer@example.com', // Add customer's email
