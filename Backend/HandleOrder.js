@@ -19,7 +19,7 @@ router.post("/additem",fetuser,async (req,res)=>{
         // console.log("data is added")
         res.status(201).send(data)        
     } catch (error) {
-        console.log("some error is tehre",error)
+        // console.log("some error is tehre",error)
         res.send("Here an unexpected error occured")        
     }
 })

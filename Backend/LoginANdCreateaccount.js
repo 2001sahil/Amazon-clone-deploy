@@ -35,7 +35,7 @@ router.post("/login",async (req,res)=>{
     try{
       sucess=false;
       const [Name,password,Email]= await [req.body.Name,req.body.password,req.body.email];
-      console.log(Name,password,req.body.email)
+      // console.log(Name,password,req.body.email)
       const query=await user.findOne({email:req.body.email})
       if(!query){
         return res.send({sucess,result:"wrong email"})

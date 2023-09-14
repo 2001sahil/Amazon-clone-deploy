@@ -3,7 +3,7 @@ const app=express()
 var cors = require('cors')
 const path=require('path')
 const stripe=require('stripe')
-("sk_test_51NmLV0SAPwCq4NmNxfruEmQh5XNCfdWJFFJH6IxgFQapHmsInsZbmUxz4PA16fPzKYf65F7Ol8YMSVBEgljgoZG900jgvodIPY")
+("rk_test_51NmLV0SAPwCq4NmNxLO1w1DqK5xEREBZqFCeqQLxkysSm9TH9QOv79cQswoGEDMhMXQungjrwQ19YrZw85RqFfAk00Tck1oT2q")
 const port=8000
 app.use(express.json())
 app.use(cors())
@@ -23,7 +23,7 @@ app.use("/Orders",require("./HandleOrder"))
 app.use("/Cart",require("./Cart"))
 app.post("/payments/create",async (req,res)=>{
     const total=req.query.total;
-    console.log("payment recieved",total)
+    // console.log("payment recieved",total)
     try{
         const paymentIntent=await stripe.paymentIntents.create({
             amount:total,
@@ -50,6 +50,7 @@ app.post("/payments/create",async (req,res)=>{
     catch (error) {
         // console.log("cc",error)
         res.status(500).json({ error: error.message });
+
       }
 })
 
