@@ -1,0 +1,53 @@
+.Top{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+}
+.Rightside{
+    width: 30%;
+    height: 50%;
+    padding: 10px;
+    background-color: hsla(210,4%,90%,.911);
+    /* gap: 10px; */
+}
+.check{
+    display: flex;
+}
+.Pay{
+    width: 60%;
+    margin-left: 20%;
+    /* height: 5vh; */
+    text-align: center;
+    background-color:   #ce9c1f ;
+    color: rgb(247, 247, 252);
+    border-color: #ce9c1f ;
+    padding: 3%;
+    
+    box-shadow: -3px 6px 5px 0px rgba(176,164,176,1);
+    transition: all .3s ease-in-out;
+    /* border-color: aliceblue; */
+}
+.Pay:hover{
+    cursor: pointer;
+    box-shadow: -3px 18px 20px 0px rgba(99,89,99,1);
+}
+.Adverti{
+    width:30vw;
+}
+.Heading{
+    text-align: center;
+}
+.emptycart{
+    margin: auto;
+    width: 100%;
+}
+@media only screen and (max-width: 700px) {
+    .Rightside{
+        width: 60%;
+    }
+    .Adverti{
+        width: 30vw;
+    }
+    
+    
+  }

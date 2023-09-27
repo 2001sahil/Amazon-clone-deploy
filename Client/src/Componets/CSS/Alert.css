@@ -1,0 +1,16 @@
+.Alertbar {
+  position: absolute;
+  width: 100%;
+  height: 7vh;
+  font-size: large;
+  background-color: hsl(0, 64%, 42%); 
+  color: white;
+  margin-bottom: 15px; 
+  margin: auto;
+  overflow: hidden;
+
+  }
+  
+  /* The close button */
+ 
+ 

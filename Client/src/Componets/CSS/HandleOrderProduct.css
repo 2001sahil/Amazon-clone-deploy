@@ -1,0 +1,31 @@
+.HandleOrderProduct{
+    background-color:  rgba(245, 243, 238, 0.849);
+    margin-bottom: 5vh;
+    padding: 2vh;
+    /* border: 2px solid red; */
+}
+.payment{
+    text-align: right;
+    font-style: oblique;
+    color: rgb(142, 146, 146);
+    font-size: 0.9rem;
+    /* font-weight: bold; */
+}
+.Ordered_items{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 700px) {
+    .payment{
+        font-size: 0.6rem;
+    }
+    
+    
+  }
+@media only screen and (max-width: 500px) {
+    .payment{
+        font-size: 0.4rem;
+    }
+    
+    
+  }

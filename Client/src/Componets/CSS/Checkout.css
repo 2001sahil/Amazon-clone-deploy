@@ -1,0 +1,42 @@
+.Count{
+    text-align: center;
+    /* border: 2px solid red; */
+    background-color: rgb(170, 172, 174);
+}
+.Count a{
+    text-decoration: none;
+}
+.User-Details{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    gap: 10px;
+    border-bottom: 1px solid rgb(169, 168, 168);
+}
+.Review_head{
+    text-align: center;
+    font-weight: bold;
+}
+.Payment_Method{
+    margin-top: 10vh;
+    height: 20vh;
+    /* border: 2px solid red; */
+    max-width: 80vw;
+    display: flex;
+    gap: 20px;
+}
+.payment_detail{
+    width: 30vw;
+    /* border: 2px solid green; */
+}
+.addedproducts{
+    border-bottom: 1px solid rgb(169, 168, 168);
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+.Address{
+    font-weight: bold;
+    color: rgb(36, 36, 36);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

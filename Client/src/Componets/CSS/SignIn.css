@@ -1,0 +1,36 @@
+.Sign{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid rgb(213, 213, 213);
+    /* border: 2px solid red; */
+
+    
+    align-items: center;
+    margin: auto;
+}
+.Signin{
+    width: 15vw;
+    height: 2rem;
+    border-radius: 5px;
+    outline: 0ch;
+    border-color: aliceblue;
+    background-color: #ce9c1f;
+}
+.new{
+    font-size: small;
+}
+.new a{
+    text-decoration: none;
+}
+.new a:hover{
+    cursor: pointer;
+    color: #e7ab14;
+}
+.Signin:hover{
+    cursor: pointer;
+}
